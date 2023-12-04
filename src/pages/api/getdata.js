@@ -7,6 +7,7 @@ const createUser = async (
 ) => {
     ConnectMongoDB()
     const body = {}
+    res.setHeader('Access-Control-Allow-Origin', '*');
     VideoParentModel.findOne()
         .populate("children")
         .exec()
