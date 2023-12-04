@@ -9,4 +9,4 @@ const VideoChildrenSchema = new Schema({
     returnMenu: Boolean,
 })
 
-export const videoChildrenModel = mongoose.models.video_children || mongoose.model('video_children', VideoChildrenSchema)
+export const videoChildrenModel = mongoose.models.children || mongoose.model('video_children', VideoChildrenSchema)

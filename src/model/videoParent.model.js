@@ -12,7 +12,7 @@ const VideoParentSchema = new Schema({
     infor: String,
     pdf: String,
     children: [
-        { type: Schema.Types.ObjectId, ref: "children" }
+        { type: Schema.Types.ObjectId, ref: "video_children" }
     ],
 })
 

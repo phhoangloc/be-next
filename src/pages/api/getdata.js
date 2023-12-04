@@ -9,6 +9,7 @@ const createUser = async (
     const body = {}
     VideoParentModel.findOne()
         .populate("children")
+        .exec()
         .catch((error) => {
             body.success = false
             body.message = error.message
@@ -18,7 +19,6 @@ const createUser = async (
             body.success = true
             body.data = data
             res.json(body)
-
         })
 }
 
